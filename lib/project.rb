@@ -8,6 +8,7 @@ class Project
   
   def add_backer(backer)
     @backers << backer
-    project
+    backers.project << self
+    #adds projects the the backed_projects array
 end
 end
